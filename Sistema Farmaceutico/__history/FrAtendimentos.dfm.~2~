@@ -1,0 +1,49 @@
+object uFrAtendimentos: TuFrAtendimentos
+  Left = 0
+  Top = 0
+  BorderStyle = bsSingle
+  Caption = 'Atendimentos'
+  ClientHeight = 396
+  ClientWidth = 689
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  ShowHint = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 689
+    Height = 396
+    Align = alClient
+    TabOrder = 0
+    ExplicitLeft = 256
+    ExplicitTop = 192
+    ExplicitWidth = 185
+    ExplicitHeight = 41
+    object DBGrid1: TDBGrid
+      Left = 0
+      Top = 168
+      Width = 679
+      Height = 209
+      TabOrder = 0
+      TitleFont.Charset = DEFAULT_CHARSET
+      TitleFont.Color = clWindowText
+      TitleFont.Height = -11
+      TitleFont.Name = 'Tahoma'
+      TitleFont.Style = []
+    end
+    object DBNavigator1: TDBNavigator
+      Left = 8
+      Top = 128
+      Width = 520
+      Height = 34
+      TabOrder = 1
+    end
+  end
+end

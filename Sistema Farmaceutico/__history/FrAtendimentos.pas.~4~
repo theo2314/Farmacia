@@ -1,0 +1,105 @@
+unit FrAtendimentos;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants,
+  System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Data.DB, Vcl.DBCtrls, Vcl.Grids,
+  Vcl.DBGrids, Vcl.ExtCtrls, Vcl.StdCtrls, Vcl.CheckLst, Vcl.Buttons,
+  FireDAC.Stan.Intf, FireDAC.Stan.Option, FireDAC.Stan.Param,
+  FireDAC.Stan.Error, FireDAC.DatS, FireDAC.Phys.Intf, FireDAC.DApt.Intf,
+  FireDAC.Stan.Async, FireDAC.DApt, FireDAC.Comp.DataSet, FireDAC.Comp.Client;
+
+type
+  TuFrAtendimentos = class(TForm)
+    Panel1: TPanel;
+    DBGrid1: TDBGrid;
+    DBNavigator1: TDBNavigator;
+    Label1: TLabel;
+    edData: TEdit;
+    lcFarmaceutico: TDBLookupComboBox;
+    Label2: TLabel;
+    Label3: TLabel;
+    lcPaciente: TDBLookupComboBox;
+    DSServicos: TDataSource;
+    lbLista: TCheckListBox;
+    Label4: TLabel;
+    Label5: TLabel;
+    memoObs: TMemo;
+    SpeedButton1: TSpeedButton;
+    SpeedButton2: TSpeedButton;
+    SpeedButton3: TSpeedButton;
+    SpeedButton4: TSpeedButton;
+    DSPaciente: TDataSource;
+    DSFarmaceutico: TDataSource;
+    DSatendimento: TDataSource;
+    FDQuery1: TFDQuery;
+    procedure FormShow(Sender: TObject);
+    procedure SpeedButton1Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  uFrAtendimentos: TuFrAtendimentos;
+
+implementation
+
+{$R *.dfm}
+
+uses DmPrincipal, StrUtils, Types, FireDAC.Stan.Util;
+
+procedure TuFrAtendimentos.FormShow(Sender: TObject);
+begin
+  DmDB.qryServicos.Open;
+  DmDB.qryServicos.First;
+  while not DmDB.qryServicos.Eof do
+  begin
+    lbLista.Items.Add(DmDB.qryServicostipo.AsString);
+    DmDB.qryServicos.Next;
+  end;
+
+  DmDB.qryPacientes.Open;
+  DmDB.qryFarmaceuticos.Open;
+  DmDB.qryAtendimentos.Open;
+end;
+
+procedure TuFrAtendimentos.SpeedButton1Click(Sender: TObject);
+var
+  i: integer;
+  valor: Double;
+  sql , nome_lista: String;
+  qry :
+begin
+  DmDB.qryAtendimentos.Append;
+  DmDB.qryAtendimentosdt.Value := StrToDate(edData.Text);
+  DmDB.qryAtendimentosnm_farmaceutico.Value := lcFarmaceutico.Text;
+  DmDB.qryAtendimentosnm_paciente.Value := lcPaciente.Text;
+
+  valor := 0;
+
+  for i := 0 to lbLista.Count - 1 do
+  begin
+    if lbLista.Checked[i] then
+    begin
+      nome_lista := lbLista.Items[i];
+
+      sql := 'select valor from servicos where tipo = "' + nome_lista + '"';
+      DmDB.qryAuxiliar.SQL.Add(sql);
+      DmDB.qryAuxiliar.Open;
+      valor := DmDB.qryAuxiliar.
+
+      DmDB.qryAtendimentosnm_lista.Value := nome_lista + ',';
+      DmDB.qryAtendimentosvalor.Value := DmDB.qryAtendimentosvalor.Value + valor;
+    end;
+  end;
+
+  DmDB.qryAtendimentosobs.Value := memoObs.Text;
+
+  DmDB.qryAtendimentos.Post;
+end;
+
+end.

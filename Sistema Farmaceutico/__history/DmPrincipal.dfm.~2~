@@ -1,0 +1,10 @@
+object DmDB: TDmDB
+  OldCreateOrder = False
+  Height = 270
+  Width = 478
+  object Conexao: TFDConnection
+    LoginPrompt = False
+    Left = 32
+    Top = 24
+  end
+end

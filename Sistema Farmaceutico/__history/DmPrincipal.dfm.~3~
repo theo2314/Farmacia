@@ -1,0 +1,15 @@
+object DmDB: TDmDB
+  OldCreateOrder = False
+  Height = 270
+  Width = 478
+  object Conexao: TFDConnection
+    Params.Strings = (
+      'Database=farmacia'
+      'User_Name=root'
+      'Password=Theo2314'
+      'DriverID=MySQL')
+    LoginPrompt = False
+    Left = 32
+    Top = 24
+  end
+end

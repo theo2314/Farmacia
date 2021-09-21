@@ -1,0 +1,34 @@
+unit FrServicos;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls;
+
+type
+  TuFrServicos = class(TForm)
+    Panel1: TPanel;
+    Label1: TLabel;
+    Panel2: TPanel;
+    Label2: TLabel;
+    ComboBox1: TComboBox;
+    Label3: TLabel;
+    edDescricao: TEdit;
+    Label4: TLabel;
+    edValor: TEdit;
+    btCadastrar: TButton;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  uFrServicos: TuFrServicos;
+
+implementation
+
+{$R *.dfm}
+
+end.

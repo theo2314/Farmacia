@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/09/11 17:23:12.000.573,=C:\Users\theod\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/09/11 18:10:34.000.865,C:\Users\theod\Desktop\Sistema Farmaceutico\FrPrincipal.dfm=C:\Users\theod\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2021/09/11 18:10:34.000.865,C:\Users\theod\Desktop\Sistema Farmaceutico\FrPrincipal.pas=C:\Users\theod\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2021/09/11 18:11:37.000.737,C:\Users\theod\Desktop\Sistema Farmaceutico\Farmacia.dproj=C:\Users\theod\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2021/09/11 18:11:51.000.832,=C:\Users\theod\Desktop\Sistema Farmaceutico\Unit2.pas</Transaction>
+    <Transaction>2021/09/11 18:20:11.000.578,C:\Users\theod\Desktop\Sistema Farmaceutico\FrFarmaceuticos.dfm=C:\Users\theod\Desktop\Sistema Farmaceutico\Unit2.dfm</Transaction>
+    <Transaction>2021/09/11 18:20:11.000.578,C:\Users\theod\Desktop\Sistema Farmaceutico\FrFarmaceuticos.pas=C:\Users\theod\Desktop\Sistema Farmaceutico\Unit2.pas</Transaction>
+    <Transaction>2021/09/11 18:20:42.000.964,=C:\Users\theod\Desktop\Sistema Farmaceutico\Unit3.pas</Transaction>
+    <Transaction>2021/09/11 18:26:34.000.824,C:\Users\theod\Desktop\Sistema Farmaceutico\FrPacientes.pas=C:\Users\theod\Desktop\Sistema Farmaceutico\Unit3.pas</Transaction>
+    <Transaction>2021/09/11 18:26:34.000.824,C:\Users\theod\Desktop\Sistema Farmaceutico\FrPacientes.dfm=C:\Users\theod\Desktop\Sistema Farmaceutico\Unit3.dfm</Transaction>
+    <Transaction>2021/09/11 18:26:45.000.287,=C:\Users\theod\Desktop\Sistema Farmaceutico\Unit3.pas</Transaction>
+    <Transaction>2021/09/11 18:56:54.000.938,C:\Users\theod\Desktop\Sistema Farmaceutico\FrServicos.dfm=C:\Users\theod\Desktop\Sistema Farmaceutico\Unit3.dfm</Transaction>
+    <Transaction>2021/09/11 18:56:54.000.938,C:\Users\theod\Desktop\Sistema Farmaceutico\FrServicos.pas=C:\Users\theod\Desktop\Sistema Farmaceutico\Unit3.pas</Transaction>
+    <Transaction>2021/09/11 19:01:04.000.077,=C:\Users\theod\Desktop\Sistema Farmaceutico\Unit4.pas</Transaction>
+    <Transaction>2021/09/11 19:04:53.000.692,C:\Users\theod\Desktop\Sistema Farmaceutico\FrAtendimentos.dfm=C:\Users\theod\Desktop\Sistema Farmaceutico\Unit4.dfm</Transaction>
+    <Transaction>2021/09/11 19:04:53.000.692,C:\Users\theod\Desktop\Sistema Farmaceutico\FrAtendimentos.pas=C:\Users\theod\Desktop\Sistema Farmaceutico\Unit4.pas</Transaction>
+    <Transaction>2021/09/11 20:07:37.000.858,=C:\Users\theod\Desktop\Sistema Farmaceutico\Unit1.pas</Transaction>
+    <Transaction>2021/09/12 00:18:07.000.188,C:\Users\theod\Desktop\Sistema Farmaceutico\DmPrincipal.pas=C:\Users\theod\Desktop\Sistema Farmaceutico\Unit1.pas</Transaction>
+    <Transaction>2021/09/12 00:18:07.000.188,C:\Users\theod\Desktop\Sistema Farmaceutico\DmPrincipal.dfm=C:\Users\theod\Desktop\Sistema Farmaceutico\Unit1.dfm</Transaction>
+  </Transactions>
+</BorlandProject>
